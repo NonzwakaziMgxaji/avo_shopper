@@ -82,10 +82,7 @@ app.get('/screens/addshops', async function (req, res) {
 
 app.post('/screens/addshops', async function (req, res) {
 	try{
-		console.log(req.body.shop_name)
 		await avoshopper.createShop(req.body.shop_name);
-		
-
 	} catch (error) {
 		console.log(error);
 	}
@@ -95,7 +92,12 @@ app.post('/screens/addshops', async function (req, res) {
 
 app.get('/screens/adddeals', async function (req, res) {
 	try{
-		deals = await avoshopper.dealsForShop()
+		const shopId = req.params.shop_id;
+		const qty = req.params.qty;
+		const price = req.params.price;
+
+
+		deals = await avoshopper.createDeal(shopId, qty, price)
 		
 
 	} catch (error) {
