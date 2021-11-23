@@ -8,3 +8,23 @@ body {
 	margin: auto;
 	width: 80%;
 }
+
+.add{
+	margin: 0.5em;
+}
+
+.deal{
+	padding: 0.5em;;
+}
+
+
+
+table {
+	border-collapse: collapse;
+}
+  
+td, th {
+border: 1px solid black;
+padding: 0.5rem;
+text-align: left;
+}

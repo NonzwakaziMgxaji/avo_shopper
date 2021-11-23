@@ -1,1 +1,22 @@
 <h2>Best deals</h2>
+
+<table>
+    <tr>
+        <th>Top 5 deals</th>
+    </tr>
+
+    {{#each avo_deals}}
+    <tr>
+        <td>{{shop_name}}</td>
+    </tr>
+
+    {{/each}}
+</table><br>
+
+<div>
+	<a href="/screens/viewshops">View shop list</a>
+</div><br>
+
+<div>
+	<a href="/screens/adddeals">Add deals</a>
+</div>

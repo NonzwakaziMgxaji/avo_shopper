@@ -1,7 +1,7 @@
 module.exports = function(pool) {
 
 	async function createShop(shopName) {
-		const result = await pool.query(`insert into shop (name) values ($1) returning id`, [shopName]);
+	const result = await pool.query(`insert into shop (name) values ($1) returning id`, [shopName])
 		if (result.rowCount === 1) {
 			return result.rows[0].id;
 		}
