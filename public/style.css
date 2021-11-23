@@ -1,12 +1,14 @@
 body {
-	background-color: lightseagreen;
-	color: whitesmoke;
+	background-color: #2D3142;
+	color: #2D3142;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
+	background-color: #BFC0C0;
 	margin: auto;
-	width: 80%;
+	padding: 0.5em;
+	width: 90%;
 }
 
 .add{

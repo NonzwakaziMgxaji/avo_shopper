@@ -35,7 +35,6 @@ app.set('view engine', 'handlebars');
 
 let avodeals;
 let avo;
-let deals;
 
 app.get('/', async function (req, res) {
 	try {
@@ -92,12 +91,12 @@ app.post('/screens/addshops', async function (req, res) {
 
 app.get('/screens/adddeals', async function (req, res) {
 	try{
-		const shopId = req.params.shop_id;
-		const qty = req.params.qty;
-		const price = req.params.price;
+		const shopId = req.body.shop_id;
+		const qty = req.body.qty;
+		const price = req.body.price;
 
 
-		deals = await avoshopper.createDeal(shopId, qty, price)
+		await avoshopper.createDeal(shopId, qty, price)
 		
 
 	} catch (error) {

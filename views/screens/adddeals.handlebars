@@ -9,7 +9,7 @@
 
         <select name="shop" class="add deal" id="">
             <option value="">Select shop</option>
-            {{#each deals}}
+            {{#each result}}
             <option value="{{name}}">{{name}}</option>
             {{/each}}
         </select>
@@ -22,12 +22,12 @@
 
     <div class="add">
         <label for="addDeal">Qty</label>
-        <input class="add deal" type="text" name="deal" id="deal">
+        <input class="add deal" type="text" name="qty" id="deal">
     </div>
 
     <div class="add">
         <label for="addDeal">Price</label>
-        <input class="add deal" type="text" name="deal" id="deal">
+        <input class="add deal" type="text" name="price" id="deal">
     </div>
 
     <div class="addbtn">
